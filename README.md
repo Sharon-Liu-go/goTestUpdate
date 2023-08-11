@@ -34,7 +34,7 @@
    //toolname 可自行工具命名
    ```
 
-3. 執行前確認
+3. 執行前確認  
     [v] 請確認來源table和欲存入之table皆已存在新DB  
     [v] 於檔案中的.env檔，完成變數設定  
 | 參數                     | 描述                                                                             |
@@ -50,7 +50,8 @@
 | PLAYERINFOS_SOURCE_TABLE | 要轉格式的playerinfos DB.TABLE。                                                 |
 | PLAYERINFOS_INTO_TABLE   | 要存入轉格式後的playerinfos DB.TABLE。                                           |
 
-4. 執行
+
+1. 執行
    ```shell
    ./toolname
    ```
