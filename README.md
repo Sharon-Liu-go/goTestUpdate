@@ -38,20 +38,20 @@
     [v] 請確認來源table和欲存入之table皆已存在新DB  
     [v] 於檔案中的.env檔，完成變數設定  
     
-| 參數                     | 描述                                                                                                                  |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| DB_HOST                  | 連接到MySQL伺服器的IP地址。                                                                                           |
-| DB_PORT                  | 連接到MySQL伺服器的埠號。                                                                                             |
-| DB_USER                  | 連接到MySQL伺服器的使用者名稱。                                                                                       |
-| DB_PASS                  | 連接到MySQL伺服器的密碼。                                                                                             |
-| ACTION                   | 執行行為: PRE_INSERT (提前資料遷徙) 或 UPDATE_BY_LASTLOGINTIME(停機後的資料遷徙)                                      |
-| START_LASTLOGINTIME      | 提前日，格式舉例:'2023-08-08 00:00:00'。<br>若ACTION為UPDATE_BY_LASTLOGINTIME為必填，PRE_INSERT則有填與不填皆不影響。 |
-| ACCOUNT_SOURCE_TABLE     | 玩家TABLE。                                                                                                           |
-| PLAYERINFOS_SOURCE_TABLE | 要轉格式的playerinfos DB.TABLE。                                                                                      |
-| PLAYERINFOS_INTO_TABLE   | 要存入轉格式後的playerinfos DB.TABLE。                                                                                |
+   | 參數                     | 描述                                                                                                                  |
+   | ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+   | DB_HOST                  | 連接到MySQL伺服器的IP地址。                                                                                           |
+   | DB_PORT                  | 連接到MySQL伺服器的埠號。                                                                                             |
+   | DB_USER                  | 連接到MySQL伺服器的使用者名稱。                                                                                       |
+   | DB_PASS                  | 連接到MySQL伺服器的密碼。                                                                                             |
+   | ACTION                   | 執行行為: PRE_INSERT (提前資料遷徙) 或 UPDATE_BY_LASTLOGINTIME(停機後的資料遷徙)                                      |
+   | START_LASTLOGINTIME      | 提前日，格式舉例:'2023-08-08 00:00:00'。<br>若ACTION為UPDATE_BY_LASTLOGINTIME為必填，PRE_INSERT則有填與不填皆不影響。 |
+   | ACCOUNT_SOURCE_TABLE     | 玩家TABLE。                                                                                                           |
+   | PLAYERINFOS_SOURCE_TABLE | 要轉格式的playerinfos DB.TABLE。                                                                                      |
+   | PLAYERINFOS_INTO_TABLE   | 要存入轉格式後的playerinfos DB.TABLE。                                                                                |
 
 
-1. 執行
+4. 執行
    ```shell
    ./toolname
    ```
